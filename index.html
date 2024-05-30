@@ -10,6 +10,8 @@
     <meta name="theme-color" content="#000000" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    
 	<style>
 		body {
 			margin: 0;
@@ -116,6 +118,14 @@
 
         //Bind keyboards/mouse/touch events
         game.getRenderer().bindStandardEvents(game.getInputManager(), window, document);
+        
+        // Check if Telegram Web App API is available and expand
+        if (window.Telegram && window.Telegram.WebApp) {
+                Telegram.WebApp.ready();
+                Telegram.WebApp.expand();
+        } else {
+                console.error("Telegram Web App API not available.");
+        }
 
         //Load all assets and start the game
         game.loadAllAssets(function() {
