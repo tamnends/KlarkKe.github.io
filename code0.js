@@ -26,6 +26,9 @@ gdjs.copyArray(runtimeScene.getObjects("Ninja"), gdjs.Untitled_32sceneCode.GDNin
 }{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDNinjaObjects2.length ;i < len;++i) {
     gdjs.Untitled_32sceneCode.GDNinjaObjects2[i].getBehavior("Flippable").flipX(false);
 }
+}{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDNinjaObjects2.length ;i < len;++i) {
+    gdjs.Untitled_32sceneCode.GDNinjaObjects2[i].setX(gdjs.Untitled_32sceneCode.GDNinjaObjects2[i].getX() + (100));
+}
 }}
 
 }
@@ -44,6 +47,9 @@ gdjs.copyArray(runtimeScene.getObjects("Ninja"), gdjs.Untitled_32sceneCode.GDNin
 }
 }{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDNinjaObjects2.length ;i < len;++i) {
     gdjs.Untitled_32sceneCode.GDNinjaObjects2[i].getBehavior("Animation").setAnimationName("run");
+}
+}{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDNinjaObjects2.length ;i < len;++i) {
+    gdjs.Untitled_32sceneCode.GDNinjaObjects2[i].setX(gdjs.Untitled_32sceneCode.GDNinjaObjects2[i].getX() + (-(100)));
 }
 }}
 
@@ -92,8 +98,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("Ninja"), gdjs.Untitled_32sceneCode.GDNinjaObjects1);
-{gdjs.playerAuthentication.displayAuthenticationBanner(runtimeScene);
-}{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDNinjaObjects1.length ;i < len;++i) {
+{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDNinjaObjects1.length ;i < len;++i) {
     gdjs.Untitled_32sceneCode.GDNinjaObjects1[i].getBehavior("Animation").setAnimationName("idle");
 }
 }{gdjs.evtTools.sound.playMusic(runtimeScene, "MiniMacro Sound - The Ninja Gaiden Soundtrack as Interpreted by MiniMacro Sound - 24 Swift Ninja II.mp3", true, 100, 1);
