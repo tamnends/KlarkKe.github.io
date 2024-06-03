@@ -10,8 +10,6 @@
     <meta name="theme-color" content="#000000" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-	<script src="https://telegram.org/js/telegram-web-app.js"></script>
-
 	<style>
 		body {
 			margin: 0;
@@ -90,6 +88,25 @@
 	<script src="howler-sound-manager/howler-sound-manager.js" crossorigin="anonymous"></script>
 	<script src="fontfaceobserver-font-manager/fontfaceobserver.js" crossorigin="anonymous"></script>
 	<script src="fontfaceobserver-font-manager/fontfaceobserver-font-manager.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__swipegesture__angle-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__swipegesture__distance-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__swipegesture__distancex-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__swipegesture__distancey-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__swipegesture__drawswipe-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__swipegesture__duration-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__swipegesture__enableswipedetection-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__swipegesture__endx-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__swipegesture__endy-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__swipegesture__hasswipejustended-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__swipegesture__isswipedetectionenabled-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__swipegesture__isswipeinprogress-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__swipegesture__layer-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__swipegesture__onscenepreevents-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__swipegesture__setlayer-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__swipegesture__startx-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__swipegesture__starty-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__swipegesture__swipedirection_4way-func.js" crossorigin="anonymous"></script>
+	<script src="gdjs-evtsext__swipegesture__swipedirection_8way-func.js" crossorigin="anonymous"></script>
 	<script src="Extensions/PlayerAuthentication/playerauthenticationcomponents.js" crossorigin="anonymous"></script>
 	<script src="Extensions/PlayerAuthentication/playerauthenticationtools.js" crossorigin="anonymous"></script>
 	<script src="object-capabilities/AnimatableBehavior.js" crossorigin="anonymous"></script>
@@ -118,14 +135,6 @@
 
         //Bind keyboards/mouse/touch events
         game.getRenderer().bindStandardEvents(game.getInputManager(), window, document);
-
-        // Check if Telegram Web App API is available and expand
-        if (window.Telegram && window.Telegram.WebApp) {
-                Telegram.WebApp.ready();
-                Telegram.WebApp.expand();
-        } else {
-                console.error("Telegram Web App API not available.");
-        }
 
         //Load all assets and start the game
         game.loadAllAssets(function() {
