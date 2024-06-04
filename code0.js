@@ -51,17 +51,6 @@ gdjs.copyArray(runtimeScene.getObjects("Ninja"), gdjs.Untitled_32sceneCode.GDNin
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{let isConditionTrue_1 = false;
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtsExt__SwipeGesture__Distance.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) > 5;
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtsExt__SwipeGesture__Distance.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) < 20;
-}
-isConditionTrue_0 = isConditionTrue_1;
-}
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__SwipeGesture__SwipeDirection_4way.func(runtimeScene, "Right", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
@@ -69,7 +58,6 @@ isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGam
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__SwipeGesture__IsSwipeInProgress.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}
 }
 }
 if (isConditionTrue_0) {
@@ -82,7 +70,7 @@ gdjs.copyArray(runtimeScene.getObjects("Ninja"), gdjs.Untitled_32sceneCode.GDNin
 }
 }{runtimeScene.getGame().getVariables().getFromIndex(1).setNumber(1);
 }{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDNinjaObjects1.length ;i < len;++i) {
-    gdjs.Untitled_32sceneCode.GDNinjaObjects1[i].getBehavior("Tween").addObjectPositionTween2("MoveRight", (gdjs.Untitled_32sceneCode.GDNinjaObjects1[i].getPointX("")) + gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(0)), (gdjs.Untitled_32sceneCode.GDNinjaObjects1[i].getPointY("")), "linear", 0.3, false);
+    gdjs.Untitled_32sceneCode.GDNinjaObjects1[i].getBehavior("Tween").addObjectPositionTween2("MoveRight", (gdjs.Untitled_32sceneCode.GDNinjaObjects1[i].getPointX("")) + gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(0)), (gdjs.Untitled_32sceneCode.GDNinjaObjects1[i].getPointY("")), "linear", 0.1, false);
 }
 }}
 
@@ -94,17 +82,6 @@ gdjs.copyArray(runtimeScene.getObjects("Ninja"), gdjs.Untitled_32sceneCode.GDNin
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{let isConditionTrue_1 = false;
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtsExt__SwipeGesture__Distance.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) > 5;
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtsExt__SwipeGesture__Distance.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) < 20;
-}
-isConditionTrue_0 = isConditionTrue_1;
-}
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__SwipeGesture__SwipeDirection_4way.func(runtimeScene, "Left", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
@@ -112,7 +89,6 @@ isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGam
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__SwipeGesture__IsSwipeInProgress.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}
 }
 }
 if (isConditionTrue_0) {
@@ -125,7 +101,7 @@ gdjs.copyArray(runtimeScene.getObjects("Ninja"), gdjs.Untitled_32sceneCode.GDNin
 }
 }{runtimeScene.getGame().getVariables().getFromIndex(1).setNumber(1);
 }{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDNinjaObjects1.length ;i < len;++i) {
-    gdjs.Untitled_32sceneCode.GDNinjaObjects1[i].getBehavior("Tween").addObjectPositionTween2("MoveLeft", (gdjs.Untitled_32sceneCode.GDNinjaObjects1[i].getPointX("")) - gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(0)), (gdjs.Untitled_32sceneCode.GDNinjaObjects1[i].getPointY("")), "linear", 0.3, false);
+    gdjs.Untitled_32sceneCode.GDNinjaObjects1[i].getBehavior("Tween").addObjectPositionTween2("MoveLeft", (gdjs.Untitled_32sceneCode.GDNinjaObjects1[i].getPointX("")) - gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(0)), (gdjs.Untitled_32sceneCode.GDNinjaObjects1[i].getPointY("")), "linear", 0.1, false);
 }
 }}
 
@@ -163,17 +139,6 @@ for (var i = 0, k = 0, l = gdjs.Untitled_32sceneCode.GDNinjaObjects1.length;i<l;
 }
 gdjs.Untitled_32sceneCode.GDNinjaObjects1.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(1).setNumber(0);
-}}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("Ninja"), gdjs.Untitled_32sceneCode.GDNinjaObjects1);
-
-let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 for (var i = 0, k = 0, l = gdjs.Untitled_32sceneCode.GDNinjaObjects1.length;i<l;++i) {
     if ( gdjs.Untitled_32sceneCode.GDNinjaObjects1[i].getBehavior("Tween").hasFinished("MoveRight") ) {
@@ -183,7 +148,19 @@ for (var i = 0, k = 0, l = gdjs.Untitled_32sceneCode.GDNinjaObjects1.length;i<l;
     }
 }
 gdjs.Untitled_32sceneCode.GDNinjaObjects1.length = k;
+}
 if (isConditionTrue_0) {
+{runtimeScene.getGame().getVariables().getFromIndex(1).setNumber(0);
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
 {runtimeScene.getGame().getVariables().getFromIndex(1).setNumber(0);
 }}
 
