@@ -1,0 +1,21 @@
+<IfModule mod_mime.c>
+  AddEncoding gzip .gz
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.gz$">
+    Header set Content-Encoding gzip
+    Header set Cache-Control "max-age=31536000, public"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_mime.c>
+  AddEncoding br .br
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.br$">
+    Header set Content-Encoding br
+    Header set Cache-Control "max-age=31536000, public"
+  </FilesMatch>
+</IfModule>
