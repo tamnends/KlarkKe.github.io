@@ -210,10 +210,10 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("Score"), gdjs.Level1Code.GDScoreObjects1);
 /* Reuse gdjs.Level1Code.GDShapeOneObjects1 */
-{for(var i = 0, len = gdjs.Level1Code.GDShapeOneObjects1.length ;i < len;++i) {
+{gdjs.evtTools.sound.playSound(runtimeScene, "Ловит-иконки.wav", false, 100, 1);
+}{for(var i = 0, len = gdjs.Level1Code.GDShapeOneObjects1.length ;i < len;++i) {
     gdjs.Level1Code.GDShapeOneObjects1[i].deleteFromScene(runtimeScene);
 }
-}{gdjs.evtTools.sound.playSound(runtimeScene, "monster.wav", false, 100, 1);
 }{runtimeScene.getGame().getVariables().getFromIndex(3).add(1);
 }{for(var i = 0, len = gdjs.Level1Code.GDScoreObjects1.length ;i < len;++i) {
     gdjs.Level1Code.GDScoreObjects1[i].setString(gdjs.evtTools.common.toString(runtimeScene.getGame().getVariables().getFromIndex(3).getAsNumber()));
@@ -457,7 +457,8 @@ gdjs.copyArray(gdjs.Level1Code.GDShape6Objects2, gdjs.Level1Code.GDShape6Objects
 
 gdjs.copyArray(gdjs.Level1Code.GDShape7Objects2, gdjs.Level1Code.GDShape7Objects3);
 
-{for(var i = 0, len = gdjs.Level1Code.GDShape1Objects3.length ;i < len;++i) {
+{gdjs.evtTools.sound.playSound(runtimeScene, "Ловит-иконки.wav", false, 100, 1);
+}{for(var i = 0, len = gdjs.Level1Code.GDShape1Objects3.length ;i < len;++i) {
     gdjs.Level1Code.GDShape1Objects3[i].deleteFromScene(runtimeScene);
 }
 for(var i = 0, len = gdjs.Level1Code.GDShape2Objects3.length ;i < len;++i) {
@@ -478,7 +479,6 @@ for(var i = 0, len = gdjs.Level1Code.GDShape6Objects3.length ;i < len;++i) {
 for(var i = 0, len = gdjs.Level1Code.GDShape7Objects3.length ;i < len;++i) {
     gdjs.Level1Code.GDShape7Objects3[i].deleteFromScene(runtimeScene);
 }
-}{gdjs.evtTools.sound.playSound(runtimeScene, "monster.wav", false, 100, 1);
 }{runtimeScene.getGame().getVariables().getFromIndex(3).add(1);
 }{for(var i = 0, len = gdjs.Level1Code.GDScoreObjects3.length ;i < len;++i) {
     gdjs.Level1Code.GDScoreObjects3[i].setString(gdjs.evtTools.common.toString(runtimeScene.getGame().getVariables().getFromIndex(3).getAsNumber()));
@@ -499,7 +499,8 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 /* Reuse gdjs.Level1Code.GDPOP_9595UP_9595CARDObjects1 */
-{gdjs.evtTools.runtimeScene.setTimeScale(runtimeScene, 1);
+{gdjs.evtTools.sound.playSound(runtimeScene, "Тыкает-кнопку.wav", false, 100, 1);
+}{gdjs.evtTools.runtimeScene.setTimeScale(runtimeScene, 1);
 }{for(var i = 0, len = gdjs.Level1Code.GDPOP_9595UP_9595CARDObjects1.length ;i < len;++i) {
     gdjs.Level1Code.GDPOP_9595UP_9595CARDObjects1[i].hide();
 }
@@ -707,7 +708,8 @@ gdjs.copyArray(gdjs.Level1Code.GDShape6Objects2, gdjs.Level1Code.GDShape6Objects
 
 gdjs.copyArray(gdjs.Level1Code.GDShape7Objects2, gdjs.Level1Code.GDShape7Objects3);
 
-{for(var i = 0, len = gdjs.Level1Code.GDShape1Objects3.length ;i < len;++i) {
+{gdjs.evtTools.sound.playSound(runtimeScene, "Ловит-иконки.wav", false, 100, 1);
+}{for(var i = 0, len = gdjs.Level1Code.GDShape1Objects3.length ;i < len;++i) {
     gdjs.Level1Code.GDShape1Objects3[i].deleteFromScene(runtimeScene);
 }
 for(var i = 0, len = gdjs.Level1Code.GDShape2Objects3.length ;i < len;++i) {
@@ -728,7 +730,6 @@ for(var i = 0, len = gdjs.Level1Code.GDShape6Objects3.length ;i < len;++i) {
 for(var i = 0, len = gdjs.Level1Code.GDShape7Objects3.length ;i < len;++i) {
     gdjs.Level1Code.GDShape7Objects3[i].deleteFromScene(runtimeScene);
 }
-}{gdjs.evtTools.sound.playSound(runtimeScene, "monster.wav", false, 100, 1);
 }{runtimeScene.getGame().getVariables().getFromIndex(3).add(1);
 }{for(var i = 0, len = gdjs.Level1Code.GDScoreObjects3.length ;i < len;++i) {
     gdjs.Level1Code.GDScoreObjects3[i].setString(gdjs.evtTools.common.toString(runtimeScene.getGame().getVariables().getFromIndex(3).getAsNumber()));
@@ -832,7 +833,8 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 /* Reuse gdjs.Level1Code.GDPOP_9595UP_9595BOMBObjects1 */
-{gdjs.evtTools.runtimeScene.setTimeScale(runtimeScene, 1);
+{gdjs.evtTools.sound.playSound(runtimeScene, "Тыкает-кнопку.wav", false, 100, 1);
+}{gdjs.evtTools.runtimeScene.setTimeScale(runtimeScene, 1);
 }{for(var i = 0, len = gdjs.Level1Code.GDPOP_9595UP_9595BOMBObjects1.length ;i < len;++i) {
     gdjs.Level1Code.GDPOP_9595UP_9595BOMBObjects1[i].hide();
 }
@@ -1353,7 +1355,8 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Level1Code.mapOfGDgdjs_9546Level1Code_9546GDObstacle1Objects2ObjectsGDgdjs_9546Level1Code_9546GDObstacle2Objects2ObjectsGDgdjs_9546Level1Code_9546GDObstacle3Objects2Objects, gdjs.Level1Code.mapOfGDgdjs_9546Level1Code_9546GDPlayerObjects2Objects, false, runtimeScene, false);
 if (isConditionTrue_0) {
-{for(var i = 0, len = gdjs.Level1Code.GDObstacle1Objects2.length ;i < len;++i) {
+{gdjs.evtTools.sound.playSound(runtimeScene, "Ловит бомбу.mp3", false, 100, 1);
+}{for(var i = 0, len = gdjs.Level1Code.GDObstacle1Objects2.length ;i < len;++i) {
     gdjs.Level1Code.GDObstacle1Objects2[i].deleteFromScene(runtimeScene);
 }
 for(var i = 0, len = gdjs.Level1Code.GDObstacle2Objects2.length ;i < len;++i) {
@@ -1365,7 +1368,6 @@ for(var i = 0, len = gdjs.Level1Code.GDObstacle3Objects2.length ;i < len;++i) {
 }{for(var i = 0, len = gdjs.Level1Code.GDPlayerObjects2.length ;i < len;++i) {
     gdjs.Level1Code.GDPlayerObjects2[i].getBehavior("Health").Hit(1, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
-}{gdjs.evtTools.sound.playSound(runtimeScene, "killed.wav", false, 100, 1);
 }
 { //Subevents: 
 gdjs.Level1Code.eventsList5(runtimeScene);} //Subevents end.

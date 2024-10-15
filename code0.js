@@ -1,15 +1,7 @@
 gdjs.MainMenuCode = {};
 gdjs.MainMenuCode.localVariables = [];
-gdjs.MainMenuCode.GDGameTitleObjects1= [];
-gdjs.MainMenuCode.GDGameTitleObjects2= [];
-gdjs.MainMenuCode.GDButtonStartObjects1= [];
-gdjs.MainMenuCode.GDButtonStartObjects2= [];
 gdjs.MainMenuCode.GDButton_9595PlayObjects1= [];
 gdjs.MainMenuCode.GDButton_9595PlayObjects2= [];
-gdjs.MainMenuCode.GDButton_9595ChooseCharacter1Objects1= [];
-gdjs.MainMenuCode.GDButton_9595ChooseCharacter1Objects2= [];
-gdjs.MainMenuCode.GDButton_9595TableOfLeadersObjects1= [];
-gdjs.MainMenuCode.GDButton_9595TableOfLeadersObjects2= [];
 gdjs.MainMenuCode.GDPlayButtonObjects1= [];
 gdjs.MainMenuCode.GDPlayButtonObjects2= [];
 gdjs.MainMenuCode.GDNewSprite2Objects1= [];
@@ -36,7 +28,8 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Level1", false);
+{gdjs.evtTools.sound.playSound(runtimeScene, "Тыкает-кнопку.wav", false, 100, 1);
+}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Level1", false);
 }}
 
 }
@@ -52,7 +45,8 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "ChooseCharacter", false);
+{gdjs.evtTools.sound.playSound(runtimeScene, "Тыкает кнопку2.mp3", false, 100, 1);
+}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "ChooseCharacter", false);
 }}
 
 }
@@ -68,7 +62,8 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "ShowLeaders", false);
+{gdjs.evtTools.sound.playSound(runtimeScene, "Тыкает-кнопку.wav", false, 100, 1);
+}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "ShowLeaders", false);
 }}
 
 }
@@ -84,13 +79,27 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Rools", false);
+{gdjs.evtTools.sound.playSound(runtimeScene, "Тыкает-кнопку.wav", false, 100, 1);
+}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Rools", false);
 }}
 
 }
 
 
 };gdjs.MainMenuCode.eventsList4 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+if (isConditionTrue_0) {
+{gdjs.evtTools.sound.playMusic(runtimeScene, "фоновая-музыка-2_mixdown.aac", false, 100, 1);
+}}
+
+}
+
 
 {
 
@@ -156,21 +165,23 @@ gdjs.MainMenuCode.eventsList3(runtimeScene);} //End of subevents
 }
 
 
+{
+
+
+let isConditionTrue_0 = false;
+{
+}
+
+}
+
+
 };
 
 gdjs.MainMenuCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
-gdjs.MainMenuCode.GDGameTitleObjects1.length = 0;
-gdjs.MainMenuCode.GDGameTitleObjects2.length = 0;
-gdjs.MainMenuCode.GDButtonStartObjects1.length = 0;
-gdjs.MainMenuCode.GDButtonStartObjects2.length = 0;
 gdjs.MainMenuCode.GDButton_9595PlayObjects1.length = 0;
 gdjs.MainMenuCode.GDButton_9595PlayObjects2.length = 0;
-gdjs.MainMenuCode.GDButton_9595ChooseCharacter1Objects1.length = 0;
-gdjs.MainMenuCode.GDButton_9595ChooseCharacter1Objects2.length = 0;
-gdjs.MainMenuCode.GDButton_9595TableOfLeadersObjects1.length = 0;
-gdjs.MainMenuCode.GDButton_9595TableOfLeadersObjects2.length = 0;
 gdjs.MainMenuCode.GDPlayButtonObjects1.length = 0;
 gdjs.MainMenuCode.GDPlayButtonObjects2.length = 0;
 gdjs.MainMenuCode.GDNewSprite2Objects1.length = 0;
@@ -187,16 +198,8 @@ gdjs.MainMenuCode.GDButton_9595LeaderBoardsObjects1.length = 0;
 gdjs.MainMenuCode.GDButton_9595LeaderBoardsObjects2.length = 0;
 
 gdjs.MainMenuCode.eventsList4(runtimeScene);
-gdjs.MainMenuCode.GDGameTitleObjects1.length = 0;
-gdjs.MainMenuCode.GDGameTitleObjects2.length = 0;
-gdjs.MainMenuCode.GDButtonStartObjects1.length = 0;
-gdjs.MainMenuCode.GDButtonStartObjects2.length = 0;
 gdjs.MainMenuCode.GDButton_9595PlayObjects1.length = 0;
 gdjs.MainMenuCode.GDButton_9595PlayObjects2.length = 0;
-gdjs.MainMenuCode.GDButton_9595ChooseCharacter1Objects1.length = 0;
-gdjs.MainMenuCode.GDButton_9595ChooseCharacter1Objects2.length = 0;
-gdjs.MainMenuCode.GDButton_9595TableOfLeadersObjects1.length = 0;
-gdjs.MainMenuCode.GDButton_9595TableOfLeadersObjects2.length = 0;
 gdjs.MainMenuCode.GDPlayButtonObjects1.length = 0;
 gdjs.MainMenuCode.GDPlayButtonObjects2.length = 0;
 gdjs.MainMenuCode.GDNewSprite2Objects1.length = 0;

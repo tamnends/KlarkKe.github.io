@@ -39,7 +39,8 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
-
+{gdjs.evtTools.sound.playSound(runtimeScene, "Тыкает-кнопку.wav", false, 100, 1);
+}
 { //Subevents
 gdjs.EndScreenCode.eventsList0(runtimeScene);} //End of subevents
 }
@@ -57,7 +58,8 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
-{gdjs.evtTools.window.openURL("https://changellenge.com/event/bca-2025/", runtimeScene);
+{gdjs.evtTools.sound.playSound(runtimeScene, "Тыкает-кнопку.wav", false, 100, 1);
+}{gdjs.evtTools.window.openURL("https://changellenge.com/event/bca-2025/", runtimeScene);
 }}
 
 }

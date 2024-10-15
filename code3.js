@@ -51,7 +51,8 @@ isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Lef
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("NameEntry"), gdjs.SubmitScreenCode.GDNameEntryObjects1);
 gdjs.copyArray(runtimeScene.getObjects("TelegramEntry"), gdjs.SubmitScreenCode.GDTelegramEntryObjects1);
-{runtimeScene.getGame().getVariables().getFromIndex(2).setString((( gdjs.SubmitScreenCode.GDNameEntryObjects1.length === 0 ) ? "" :gdjs.SubmitScreenCode.GDNameEntryObjects1[0].getText()));
+{gdjs.evtTools.sound.playSound(runtimeScene, "Тыкает-кнопку.wav", false, 100, 1);
+}{runtimeScene.getGame().getVariables().getFromIndex(2).setString((( gdjs.SubmitScreenCode.GDNameEntryObjects1.length === 0 ) ? "" :gdjs.SubmitScreenCode.GDNameEntryObjects1[0].getText()));
 }{runtimeScene.getGame().getVariables().getFromIndex(4).getChild("name").setString(runtimeScene.getGame().getVariables().getFromIndex(2).getAsString());
 }{runtimeScene.getGame().getVariables().getFromIndex(4).getChild("score").setNumber(runtimeScene.getGame().getVariables().getFromIndex(3).getAsNumber());
 }{runtimeScene.getGame().getVariables().getFromIndex(4).getChild("telegramNick").setString((( gdjs.SubmitScreenCode.GDTelegramEntryObjects1.length === 0 ) ? "" :gdjs.SubmitScreenCode.GDTelegramEntryObjects1[0].getText()));
