@@ -889,6 +889,17 @@ gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.Level1Code.GDPlayerObject
 }{for(var i = 0, len = gdjs.Level1Code.GDPOP_9595UP_9595CARDObjects1.length ;i < len;++i) {
     gdjs.Level1Code.GDPOP_9595UP_9595CARDObjects1[i].hide();
 }
+}{runtimeScene.getGame().getVariables().getFromIndex(7).setBoolean(true);
+}{runtimeScene.getGame().getVariables().getFromIndex(8).setBoolean(true);
+}{runtimeScene.getGame().getVariables().getFromIndex(9).setBoolean(true);
+}{runtimeScene.getGame().getVariables().getFromIndex(10).setBoolean(true);
+}{runtimeScene.getGame().getVariables().getFromIndex(11).setBoolean(true);
+}{runtimeScene.getGame().getVariables().getFromIndex(12).setBoolean(true);
+}{runtimeScene.getGame().getVariables().getFromIndex(13).setBoolean(true);
+}{runtimeScene.getGame().getVariables().getFromIndex(16).setBoolean(true);
+}{runtimeScene.getGame().getVariables().getFromIndex(17).setBoolean(true);
+}{runtimeScene.getGame().getVariables().getFromIndex(18).setBoolean(true);
+}{runtimeScene.getGame().getVariables().getFromIndex(3).setNumber(0);
 }}
 
 }
@@ -982,7 +993,7 @@ gdjs.Level1Code.GDShapeOneObjects1.length = 0;
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.runtimeScene.timerElapsedTime(runtimeScene, 3, "ShapeCreation");
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.timerElapsedTime(runtimeScene, 30, "ShapeCreation");
 if (isConditionTrue_0) {
 gdjs.Level1Code.GDShape1Objects1.length = 0;
 
