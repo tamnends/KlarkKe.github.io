@@ -31,7 +31,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "button-11.wav", false, 100, 1);
-}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Level1", false);
+}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Play", false);
 }}
 
 }

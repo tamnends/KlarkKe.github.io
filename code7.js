@@ -69,6 +69,19 @@ if (isConditionTrue_0) {
 
 {
 
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+if (isConditionTrue_0) {
+{gdjs.evtTools.sound.playSound(runtimeScene, "bg_sound.mp3", true, 100, 1);
+}}
+
+}
+
+
+{
+
 gdjs.copyArray(runtimeScene.getObjects("StartMenu"), gdjs.EndScreenCode.GDStartMenuObjects1);
 
 let isConditionTrue_0 = false;
