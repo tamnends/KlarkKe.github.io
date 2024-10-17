@@ -63,8 +63,11 @@ gdjs.ShowLeadersCode.eventsList1 = function(runtimeScene) {
 
 
 let isConditionTrue_0 = false;
-{
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+if (isConditionTrue_0) {
 {gdjs.evtTools.network.sendAsyncRequest("https://mts-game.ru/getscores", "", "GET", "", runtimeScene.getScene().getVariables().getFromIndex(0), gdjs.VariablesContainer.badVariable);
+}{runtimeScene.getGame().getVariables().getFromIndex(6).setNumber(0);
 }}
 
 }
@@ -122,6 +125,16 @@ if (isConditionTrue_0)
 }
 }{runtimeScene.getGame().getVariables().getFromIndex(6).add(1);
 }}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
 }
 
 }
