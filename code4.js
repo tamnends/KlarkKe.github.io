@@ -1050,7 +1050,7 @@ gdjs.PlayCode.GDShapeOneObjects1.length = 0;
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.runtimeScene.timerElapsedTime(runtimeScene, 3, "ShapeCreation");
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.timerElapsedTime(runtimeScene, 30, "ShapeCreation");
 if (isConditionTrue_0) {
 gdjs.PlayCode.GDShape1Objects1.length = 0;
 
