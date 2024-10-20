@@ -87,21 +87,20 @@ if (isConditionTrue_0) {
 
 
 };gdjs.MainMenuCode.mapOfGDgdjs_9546MainMenuCode_9546GDintership2Objects1Objects = Hashtable.newFrom({"intership2": gdjs.MainMenuCode.GDintership2Objects1});
-gdjs.MainMenuCode.userFunc0xceebd0 = function GDJSInlineCode(runtimeScene) {
+gdjs.MainMenuCode.userFunc0x911428 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 if (typeof Telegram !== 'undefined' && Telegram.WebApp && Telegram.WebApp.openLink) {
   Telegram.WebApp.openLink('https://job.mts.ru/programs/start');
 } else {
-  window.open('https://job.mts.ru/programs/start', '_blank');
+  window.location.href = 'https://job.mts.ru/programs/start';
 }
-
 };
 gdjs.MainMenuCode.eventsList4 = function(runtimeScene) {
 
 {
 
 
-gdjs.MainMenuCode.userFunc0xceebd0(runtimeScene);
+gdjs.MainMenuCode.userFunc0x911428(runtimeScene);
 
 }
 
