@@ -49,21 +49,20 @@ gdjs.EndScreenCode.eventsList0(runtimeScene);} //End of subevents
 
 
 };gdjs.EndScreenCode.mapOfGDgdjs_9546EndScreenCode_9546GDCheckUPObjects1Objects = Hashtable.newFrom({"CheckUP": gdjs.EndScreenCode.GDCheckUPObjects1});
-gdjs.EndScreenCode.userFunc0xd074a0 = function GDJSInlineCode(runtimeScene) {
+gdjs.EndScreenCode.userFunc0xa50ed8 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 if (typeof Telegram !== 'undefined' && Telegram.WebApp && Telegram.WebApp.openLink) {
   Telegram.WebApp.openLink('https://changellenge.com/event/bca-2025/');
 } else {
-  window.open('https://changellenge.com/event/bca-2025/', '_blank');
+  window.location.href = 'https://changellenge.com/event/bca-2025/';
 }
-
 };
 gdjs.EndScreenCode.eventsList2 = function(runtimeScene) {
 
 {
 
 
-gdjs.EndScreenCode.userFunc0xd074a0(runtimeScene);
+gdjs.EndScreenCode.userFunc0xa50ed8(runtimeScene);
 
 }
 
@@ -87,25 +86,6 @@ gdjs.EndScreenCode.eventsList2(runtimeScene);} //End of subevents
 
 
 };gdjs.EndScreenCode.eventsList4 = function(runtimeScene) {
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
-if (isConditionTrue_0) {
-{gdjs.evtTools.sound.playSound(runtimeScene, "button-11.wav", false, 100, 1);
-}{gdjs.evtTools.window.openURL("https://changellenge.com/event/bca-2025/", runtimeScene);
-}
-{ //Subevents
-gdjs.EndScreenCode.eventsList3(runtimeScene);} //End of subevents
-}
-
-}
-
-
-};gdjs.EndScreenCode.eventsList5 = function(runtimeScene) {
 
 {
 
@@ -146,7 +126,7 @@ isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.EndScreenCode.mapOfG
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.EndScreenCode.eventsList4(runtimeScene);} //End of subevents
+gdjs.EndScreenCode.eventsList3(runtimeScene);} //End of subevents
 }
 
 }
@@ -164,7 +144,7 @@ gdjs.EndScreenCode.GDStartMenuObjects2.length = 0;
 gdjs.EndScreenCode.GDCheckUPObjects1.length = 0;
 gdjs.EndScreenCode.GDCheckUPObjects2.length = 0;
 
-gdjs.EndScreenCode.eventsList5(runtimeScene);
+gdjs.EndScreenCode.eventsList4(runtimeScene);
 gdjs.EndScreenCode.GDBGObjects1.length = 0;
 gdjs.EndScreenCode.GDBGObjects2.length = 0;
 gdjs.EndScreenCode.GDStartMenuObjects1.length = 0;
