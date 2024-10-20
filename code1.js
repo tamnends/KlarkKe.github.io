@@ -87,13 +87,13 @@ if (isConditionTrue_0) {
 
 
 };gdjs.MainMenuCode.mapOfGDgdjs_9546MainMenuCode_9546GDintership2Objects1Objects = Hashtable.newFrom({"intership2": gdjs.MainMenuCode.GDintership2Objects1});
-gdjs.MainMenuCode.userFunc0xd055f0 = function GDJSInlineCode(runtimeScene) {
+gdjs.MainMenuCode.userFunc0x9285c8 = function GDJSInlineCode(runtimeScene) {
 "use strict";
   var isMobile = /iPhone|iPad|iPod|Android|webOS|BlackBerry|Windows Phone|Opera Mini|IEMobile|Mobile/i.test(navigator.userAgent);
   if (isMobile) {
-    window.location.href = 'https://changellenge.com/event/bca-2025/';
+    window.location.href = 'https://job.mts.ru/programs/start';
   } else {
-    window.open('https://changellenge.com/event/bca-2025/', '_blank');
+    window.open('https://job.mts.ru/programs/start', '_blank');
   }
 };
 gdjs.MainMenuCode.eventsList4 = function(runtimeScene) {
@@ -101,7 +101,7 @@ gdjs.MainMenuCode.eventsList4 = function(runtimeScene) {
 {
 
 
-gdjs.MainMenuCode.userFunc0xd055f0(runtimeScene);
+gdjs.MainMenuCode.userFunc0x9285c8(runtimeScene);
 
 }
 
