@@ -23,7 +23,7 @@ gdjs.SubmitScreenCode.GDNewSprite3Objects2= [];
 
 
 gdjs.SubmitScreenCode.mapOfGDgdjs_9546SubmitScreenCode_9546GDSubmitObjects1Objects = Hashtable.newFrom({"Submit": gdjs.SubmitScreenCode.GDSubmitObjects1});
-gdjs.SubmitScreenCode.asyncCallback12333612 = function (runtimeScene, asyncObjectsList) {
+gdjs.SubmitScreenCode.asyncCallback12297116 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.SubmitScreenCode.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "EndScreen", false);
 }gdjs.SubmitScreenCode.localVariables.length = 0;
@@ -37,7 +37,7 @@ gdjs.SubmitScreenCode.eventsList0 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.SubmitScreenCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.SubmitScreenCode.asyncCallback12333612(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.SubmitScreenCode.asyncCallback12297116(runtimeScene, asyncObjectsList)));
 }
 }
 

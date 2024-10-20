@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__ArrayTools__GlobalShuffle !== "undefined") {
 gdjs.evtsExt__ArrayTools__GlobalShuffle = {};
 
 
-gdjs.evtsExt__ArrayTools__GlobalShuffle.userFunc0x901c68 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ArrayTools__GlobalShuffle.userFunc0x89c150 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.Variable} */
 const array = eventsFunctionContext.getArgument("Array");
@@ -24,7 +24,7 @@ gdjs.evtsExt__ArrayTools__GlobalShuffle.eventsList0 = function(runtimeScene, eve
 {
 
 
-gdjs.evtsExt__ArrayTools__GlobalShuffle.userFunc0x901c68(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ArrayTools__GlobalShuffle.userFunc0x89c150(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

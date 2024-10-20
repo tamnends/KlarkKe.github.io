@@ -879,7 +879,7 @@ gdjs.copyArray(runtimeScene.getObjects("POP_UP_BOMB"), gdjs.PlayCode.GDPOP_9595U
 
 
 };gdjs.PlayCode.mapOfGDgdjs_9546PlayCode_9546GDObstacle1Objects1ObjectsGDgdjs_9546PlayCode_9546GDObstacle2Objects1ObjectsGDgdjs_9546PlayCode_9546GDObstacle3Objects1Objects = Hashtable.newFrom({"Obstacle1": gdjs.PlayCode.GDObstacle1Objects1, "Obstacle2": gdjs.PlayCode.GDObstacle2Objects1, "Obstacle3": gdjs.PlayCode.GDObstacle3Objects1});
-gdjs.PlayCode.asyncCallback12197044 = function (runtimeScene, asyncObjectsList) {
+gdjs.PlayCode.asyncCallback12168772 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.PlayCode.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "SubmitScreen", false);
 }gdjs.PlayCode.localVariables.length = 0;
@@ -893,7 +893,7 @@ gdjs.PlayCode.eventsList7 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.PlayCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2.5), (runtimeScene) => (gdjs.PlayCode.asyncCallback12197044(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2.5), (runtimeScene) => (gdjs.PlayCode.asyncCallback12168772(runtimeScene, asyncObjectsList)));
 }
 }
 

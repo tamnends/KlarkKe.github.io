@@ -87,7 +87,26 @@ if (isConditionTrue_0) {
 
 
 };gdjs.MainMenuCode.mapOfGDgdjs_9546MainMenuCode_9546GDintership2Objects1Objects = Hashtable.newFrom({"intership2": gdjs.MainMenuCode.GDintership2Objects1});
+gdjs.MainMenuCode.userFunc0xb05008 = function GDJSInlineCode(runtimeScene) {
+"use strict";
+if (typeof Telegram !== 'undefined' && Telegram.WebApp && Telegram.WebApp.openLink) {
+  Telegram.WebApp.openLink('https://job.mts.ru/programs/start');
+} else {
+  window.open('https://job.mts.ru/programs/start', '_blank');
+}
+
+};
 gdjs.MainMenuCode.eventsList4 = function(runtimeScene) {
+
+{
+
+
+gdjs.MainMenuCode.userFunc0xb05008(runtimeScene);
+
+}
+
+
+};gdjs.MainMenuCode.eventsList5 = function(runtimeScene) {
 
 {
 
@@ -97,13 +116,15 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "button-11.wav", false, 100, 1);
-}{gdjs.evtTools.window.openURL("https://job.mts.ru/programs/start", runtimeScene);
-}}
+}
+{ //Subevents
+gdjs.MainMenuCode.eventsList4(runtimeScene);} //End of subevents
+}
 
 }
 
 
-};gdjs.MainMenuCode.eventsList5 = function(runtimeScene) {
+};gdjs.MainMenuCode.eventsList6 = function(runtimeScene) {
 
 {
 
@@ -192,7 +213,7 @@ isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.MainMenuCode.mapOfGD
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.MainMenuCode.eventsList4(runtimeScene);} //End of subevents
+gdjs.MainMenuCode.eventsList5(runtimeScene);} //End of subevents
 }
 
 }
@@ -220,7 +241,7 @@ gdjs.MainMenuCode.GDButton_9595LeaderBoardsObjects2.length = 0;
 gdjs.MainMenuCode.GDintership2Objects1.length = 0;
 gdjs.MainMenuCode.GDintership2Objects2.length = 0;
 
-gdjs.MainMenuCode.eventsList5(runtimeScene);
+gdjs.MainMenuCode.eventsList6(runtimeScene);
 gdjs.MainMenuCode.GDPlayButtonObjects1.length = 0;
 gdjs.MainMenuCode.GDPlayButtonObjects2.length = 0;
 gdjs.MainMenuCode.GDNewSprite2Objects1.length = 0;
