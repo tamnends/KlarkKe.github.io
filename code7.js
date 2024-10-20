@@ -49,7 +49,7 @@ gdjs.EndScreenCode.eventsList0(runtimeScene);} //End of subevents
 
 
 };gdjs.EndScreenCode.mapOfGDgdjs_9546EndScreenCode_9546GDCheckUPObjects1Objects = Hashtable.newFrom({"CheckUP": gdjs.EndScreenCode.GDCheckUPObjects1});
-gdjs.EndScreenCode.userFunc0xa50ed8 = function GDJSInlineCode(runtimeScene) {
+gdjs.EndScreenCode.userFunc0x847fc0 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 if (typeof Telegram !== 'undefined' && Telegram.WebApp && Telegram.WebApp.openLink) {
   Telegram.WebApp.openLink('https://changellenge.com/event/bca-2025/');
@@ -62,7 +62,7 @@ gdjs.EndScreenCode.eventsList2 = function(runtimeScene) {
 {
 
 
-gdjs.EndScreenCode.userFunc0xa50ed8(runtimeScene);
+gdjs.EndScreenCode.userFunc0x847fc0(runtimeScene);
 
 }
 
