@@ -26,6 +26,7 @@
         
 	</style>
     <!-- Libs and GDJS core files : -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
 		<script src="libs/jshashtable.js" crossorigin="anonymous"></script>
 	<script src="logger.js" crossorigin="anonymous"></script>
 	<script src="gd.js" crossorigin="anonymous"></script>
@@ -231,11 +232,22 @@
         //Bind keyboards/mouse/touch events
         game.getRenderer().bindStandardEvents(game.getInputManager(), window, document);
 
+        const telegramApp = window.Telegram.WebApp;
+        telegramApp.expand();
+
+        // Следим за изменениями размера экрана
+        telegramApp.onEvent('viewportChanged', () => {
+            telegramApp.expand();
+        });
+
+
         //Load all assets and start the game
         game.loadAllAssets(function() {
             game.startGameLoop();
         });
     })();
+
+
 
 	</script>
 </body>
