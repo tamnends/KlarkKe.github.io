@@ -218,35 +218,90 @@
 
 </head>
 <body>
+	<style>
+    /* Стили для фиксации прокрутки */
+    body.no-scroll {
+        overflow: hidden;
+    }
 
+    /* iframe для документа Google Docs */
+    #rules-iframe {
+        display: none; /* Скрываем iframe по умолчанию */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1000; /* Над игрой */
+        border: none;
+        background-color: white;
+    }
+	</style>
+
+	<iframe id="rules-iframe" src="URL_ВАШЕГО_GOOGLE_DOC"></iframe>
     
 	<script>
 
-    (function() {
-        //Initialization
-        var game = new gdjs.RuntimeGame(gdjs.projectData, {});
+    // (function() {
+    //     var game = new gdjs.RuntimeGame(gdjs.projectData, {});
 
-        //Create a renderer
-        game.getRenderer().createStandardCanvas(document.body);
+    //     game.getRenderer().createStandardCanvas(document.body);
 
-        //Bind keyboards/mouse/touch events
-        game.getRenderer().bindStandardEvents(game.getInputManager(), window, document);
+    //     game.getRenderer().bindStandardEvents(game.getInputManager(), window, document);
 
-        const telegramApp = window.Telegram.WebApp;
+    //     const telegramApp = window.Telegram.WebApp;
+    //     telegramApp.expand();
+
+    //     telegramApp.onEvent('viewportChanged', () => {
+    //         telegramApp.expand();
+    //     });
+
+
+    //     game.loadAllAssets(function() {
+    //         game.startGameLoop();
+    //     });
+    // })();
+
+
+	(function() {
+    // Инициализация игры
+    var game = new gdjs.RuntimeGame(gdjs.projectData, {});
+
+    // Создание рендера
+    game.getRenderer().createStandardCanvas(document.body);
+
+    // Привязка событий клавиатуры/мыши/сенсоров
+    game.getRenderer().bindStandardEvents(game.getInputManager(), window, document);
+
+    // Telegram API для разворачивания на полный экран
+    const telegramApp = window.Telegram.WebApp;
+    telegramApp.expand();
+
+    telegramApp.onEvent('viewportChanged', () => {
         telegramApp.expand();
+    });
 
-        // Следим за изменениями размера экрана
-        telegramApp.onEvent('viewportChanged', () => {
-            telegramApp.expand();
-        });
+    // Управление отображением iframe
+    function openRules() {
+        document.getElementById('rules-iframe').style.display = 'block';
+        document.body.classList.add('no-scroll');
+    }
 
+    function closeRules() {
+        document.getElementById('rules-iframe').style.display = 'none';
+        document.body.classList.remove('no-scroll');
+    }
 
-        //Load all assets and start the game
-        game.loadAllAssets(function() {
-            game.startGameLoop();
-        });
-    })();
+    // Пример вызова openRules() — замените на реальную кнопку внутри игры
+    document.getElementById('open-rules-button').onclick = openRules;
 
+    // Закрыть iframe по клику вне его (если нужно)
+    document.getElementById('rules-iframe').onclick = closeRules;
+
+    game.loadAllAssets(function() {
+        game.startGameLoop();
+    });
+})();
 
 
 	</script>
